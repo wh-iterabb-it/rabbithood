@@ -1,0 +1,18 @@
+# Test Coverage Exports
+test/coverage
+coverage
+coverage.*
+coverage.lcov
+.nyc_output
+
+# Node Dependencies
+node_modules
+
+# NPM Logs
+npm-debug.log
+
+# Dev configs
+*config.js
+
+# Dist
+dist
