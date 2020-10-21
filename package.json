@@ -1,0 +1,39 @@
+{
+  "name": "rabbithood",
+  "version": "0.1.0",
+  "description": "A Brand new 2020 Unofficial Robinhood node API created by painstakingly reverse engineering.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wh-iterabb-it/rabbithood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wh-iterabb-it/rabbithood/issues"
+  },
+  "homepage": "https://github.com/wh-iterabb-it/rabbithood#readme",
+  "license": "ISC",
+  "contributors": [
+    "Beau Bouchard <https://github.com/BeauBouchard>"
+  ],
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Write tests! \"",
+    "lint": "node_modules/.bin/eslint --format codeframe './lib/**/*.js'",
+    "lint-fix": "node_modules/.bin/eslint --fix --format codeframe './lib/**/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "airbnb"
+  },
+  "dependencies": {
+    "axios": "0.19.2"
+  },
+  "devDependencies": {
+    "eslint": "6.5.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.20.0"
+  }
+}
