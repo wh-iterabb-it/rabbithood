@@ -41,4 +41,46 @@ class Rabbithood {
       logger.warn(`You have not entered an auth token into the constructor`);
     }
   }
+
+  getFundamentals(ticker) {
+    const uri = this.apiUrl + this.endpoints.fundamentals;
+
+    const data = { 'symbols': ticker };
+    const options = {
+      method: 'GET',
+      headers: this.headers,
+      data: qs.stringify(data),
+      uri,
+    };
+
+    return axios(options);
+  }
+
+  getInvestmentProfile(ticker) {
+    const uri = this.apiUrl + this.endpoints.investmentProfile;
+
+    const data = { 'symbols': ticker };
+    const options = {
+      method: 'GET',
+      headers: this.headers,
+      data: qs.stringify(data),
+      uri,
+    };
+
+    return axios(options);
+  }
+
+  getInstruments(symbol) {
+    const uri = this.apiUrl + this.endpoints.instruments;
+
+    const data = {'query': symbol.toUpperCase()};
+    const options = {
+      method: 'GET',
+      headers: this.headers,
+      data: qs.stringify(data),
+      uri,
+    };
+
+    return axios(options);
+  }
 }
