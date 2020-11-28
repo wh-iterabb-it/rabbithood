@@ -1,6 +1,6 @@
 {
   "name": "rabbithood",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Brand new 2020 Unofficial Robinhood node API created by painstakingly reverse engineering.",
   "main": "index.js",
   "directories": {
@@ -23,7 +23,9 @@
   "contributors": [
     "Beau Bouchard <https://github.com/BeauBouchard>"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "eslintConfig": {
     "extends": "airbnb"
   },
